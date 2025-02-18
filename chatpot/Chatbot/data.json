@@ -1,0 +1,73 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": [" What is AI","AI"],
+         "responses": ["AI stands for Artificial Intelligence, which is the development of computer systems that can perform tasks that would typically require human intelligence, such as visual perception, speech recognition, decision-making, and natural language processing"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["What are the main types of AI?","Types of AI"],
+         "responses": ["The main types of AI are reactive machines, limited memory, theory of mind, and self-aware."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["What are some applications of AI in computer science?","Applications"],
+         "responses": ["Some applications of AI in computer science include natural language processing, computer vision, robotics, machine learning, and expert systems."],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": ["What is machine learning?","Machine Learning", "ML"],
+         "responses": ["Machine learning is a subset of AI that involves using algorithms and statistical models to enable computers to learn from data and make predictions or decisions without being explicitly programmed."],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["What is deep learning?","Deep Learning","DL"],
+         "responses": ["Deep learning is a subset of machine learning that involves using artificial neural networks with many layers to enable computers to learn from large amounts of data and make complex decisions."],
+         "context": [""]
+        },
+        {"tag": "adverse_drug",
+         "patterns": ["What are some challenges in AI development?","AI Development"],
+         "responses": ["Some challenges in AI development include data quality and bias, interpretability and explainability of algorithms, ethical and social considerations, and the potential for job displacement and economic inequality."],
+         "context": [""]
+        },
+        {"tag": "blood_pressure",
+         "patterns": ["What is a neural network?", "neural networks" ],
+         "responses": ["A neural network is a type of artificial neural network that is designed to recognize patterns in data, learn from examples, and make decisions or predictions. It is modeled after the structure and function of the human brain."],
+         "context": [""]
+        },
+        {"tag": "blood_pressure_search",
+         "patterns": [" What are some popular programming languages for AI?","AI Programming language" ],
+         "responses": ["Some popular programming languages for AI include Python, R, Java, and C++."],
+         "context": ["search_blood_pressure_by_patient_id"]
+        },
+        {"tag": "search_blood_pressure_by_patient_id",
+         "patterns": [],
+         "responses": ["Loading Blood pressure result for Patient"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": [" What is natural language processing (NLP)?","NLP" ],
+         "responses": ["Natural language processing is a subset of AI that involves teaching computers to understand and generate human language, such as speech and text."],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": ["What is computer vision?","Computer Vision"],
+         "responses": ["Computer vision is a subset of AI that involves teaching computers to recognize, interpret, and understand visual information from the world around us, such as images and videos."],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["What is reinforcement learning?","RL","Reforcement Learning" ],
+         "responses": ["Reinforcement learning is a type of machine learning that involves teaching computers to learn through trial and error by rewarding good behavior and punishing bad behavior."],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [" What is DNS?","DNS"],
+         "responses": [" DNS (Domain Name System) is a protocol used to translate human-readable domain names (such as www.example.com) into IP addresses that computers can use to locate resources on the internet."],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": ["What is a computer network?","CN"],
+         "responses": ["A computer network is a collection of interconnected devices that can communicate with each other and share resources such as files, printers, and internet access."],
+         "context": [""]
+        }
+   ]
+}
