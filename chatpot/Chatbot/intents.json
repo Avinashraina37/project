@@ -1,320 +1,386 @@
-{"intents":
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "hello",
+        "hey",
+        "hi",
+        "good day",
+        "greetings",
+        "what's up?",
+        "how is it going"
+      ],
+      "responses": [
+        "hello",
+        "Welcome to  goercey shop",
+        "How can I help you today? Feel free to ask anything."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "cya",
+        "see you later",
+        "goodbye",
+        "have a good day",
+        "bye",
+        "cao",
+        "see ya"
+      ],
+      "responses": ["have a nice day", "goodbye"]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old",
+        "how old are you?",
+        "what is your age",
+        "how old are you",
+        "age?"
+      ],
+      "responses": [
+        "I get reborn after every compilation",
+        "hey!",
+        "my owners are averagely 20 years!"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name",
+        "what should i call you",
+        "what's your name?",
+        "who are you?",
+        "can you tell me your name"
+      ],
+      "responses": ["you can call Ryoko Medbot!", "i am Medbot!", "i am Medbot"]
+    },
+    {
+      "tag": "apple",
+      "patterns": ["What is the price of apple?"],
+      "responses": [
+        "The price of an apple is 200/kg. <a href=\"https://ravd.onrender.com/products/\">Apple product</a>"
+      ]
+    },
 
-[
-            {
-             "tag":"greetings",
-             "patterns": ["hello","hey","hi","good day","greetings","what's up?","how is it going"],
-             "responses":["hello","Welcome to  goercey shop","How can I help you today? Feel free to ask anything."]
-            },
-            {
-             "tag":"goodbye",
-             "patterns": ["cya","see you later","goodbye","have a good day","bye","cao","see ya"],
-             "responses":["have a nice day","goodbye"]
-            },
-            {
-             "tag":"age",
-             "patterns": ["how old","how old are you?","what is your age","how old are you","age?"],
-             "responses":["I get reborn after every compilation","hey!","my owners are averagely 20 years!"]
-            },
-            {
-             "tag":"name",
-             "patterns": ["what is your name","what should i call you","what's your name?","who are you?","can you tell me your name"],
-             "responses":["you can call Ryoko Medbot!","i am Medbot!","i am Medbot"]
-            },
-            {
-                "tag": "apple",
-                "patterns": ["What is the price of apple?"],
-                "responses": ["The price of an apple is 200/kg. <a href=\"http://127.0.0.1:8000/products/\">Apple product</a>"]
-            },
-              
-            {
-                "tag":"Munnar",
-                "patterns": ["What are view places in Munnar ?","Here are some key places to visit in Munnar"],
-                "responses":["1. Tea Gardens2. Eravikulam National Park3. Anamudi Peak4. Mattupetty Dam5. Top Station6. Echo Point7. Kundala Lake8. Attukal Waterfalls"]
-               },
-               {
-                "tag":"backwaters",
-                "patterns": ["What is the best time to visit the Taj Mahal?"],
-                "responses":["October to March for pleasant weather."]
-               },
-               {
-                "tag":"backwaters",
-                "patterns": ["Tour Packages section in the app to find houseboat tours in Alleppey."],
-                "responses":["October to March for pleasant weather."]
-               }
-               ,
-            {
-                "tag": "Kiwi",
-                
-                "patterns": ["What is the price of Kiwi?"],
-                "responses": ["The price of an Kiwi is 25/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=1\">Kiwi product</a>"]
-            },
-            
-            {
-                "tag": "Ginger",
-                "patterns": ["What is the price of Ginger?"],
-                "responses": ["The price of an Ginger is 75/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Ginger product</a>"]
-            }
-            ,
-            {
-                "tag": "Orange",
-                "patterns": ["What is the price of Orange?"],
-                "responses": ["The price of an Orange is 155/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=1\">Orange product</a>"]
-            },
-            
-            {
-                "tag": "Banana",
-                "patterns": ["What is the price of Banana?"],
-                "responses": ["The price of an Banana is 200/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=1\">Banana product</a>"]
-            }
-            ,
-            {
-                "tag": "Mango",
-                "patterns": ["What is the price of Mango?"],
-                "responses": ["The price of an KMango is 150/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=1\">Mango product</a>"]
-            }
-            ,
-            {
-                "tag": "Pototo",
-                "patterns": ["What is the price of Pototo?"],
-                "responses": ["The price of an Pototo is 50/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Pototo product</a>"]
-            }
-            ,
-            {
-                "tag": "Carrot",
-                "patterns": ["What is the price of Carrot?"],
-                "responses": ["The price of an Carrot is 70/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Carrot product</a>"]
-            }
-            ,
-            {
-                "tag": "Tomoto",
-                "patterns": ["What is the price of Tomoto?"],
-                "responses": ["The price of an Tomoto is 100/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Tomoto product</a>"]
-            },
-            {
-                "tag": "Pine Apple",
-                "patterns": ["What is the price of Pine Apple?"],
-                "responses": ["The price of an Pine Apple is 100/kg. <a href=\"http://127.0.0.1:8000/products/\">Pine Apple product</a>"]
-            },
-            {
-                "tag": "Cabbage",
-                "patterns": ["What is the price of Cabbage?"],
-                "responses": ["The price of an Cabbage is 30/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Cabbage product</a>"]
-            },
-            {
-                "tag": "Cauli Flower",
-                "patterns": ["What is the price of Cauli Flower?"],
-                "responses": ["The price of an Cauli Flower is 30/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Cauli Flower product</a>"]
-            },
-            {
-                "tag": "Ladies Finger",
-                "patterns": ["What is the price of Ladies Finger?"],
-                "responses": ["The price of an Ladies Finger is 20/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Ladies Finger product</a>"]
-            }
-            ,
-            {
-                "tag": "Onion",
-                "patterns": ["What is the price of Onion?"],
-                "responses": ["The price of an Onion is 100/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Onion product</a>"]
-            }
-            ,
-            {
-                "tag": "Beetroot",
-                "patterns": ["What is the price of Beetroot?"],
-                "responses": ["The price of an Beetroot is 30/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Beetroot product</a>"]
-            }
-            ,
-            {
-                "tag": "Beans",
-                "patterns": ["What is the price of Beans?"],
-                "responses": ["The price of an Beans is 20/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Beans product</a>"]
-            }
-            ,
-            {
-                "tag": "Brinjal",
-                "patterns": ["What is the price of Brinjal?"],
-                "responses": ["The price of an Brinjal is 20/kg. <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Brinjal product</a>"]
-            }
-            ,
-            {
-                "tag": "Fresh Fruits",
-                "patterns": ["Fresh Fruits?"],
-                "responses": [
-                  "Apple <a href=\"http://127.0.0.1:8000/products/?categorie=1\">Apple product</a><br>",
-                  "Pine Apple <a http://127.0.0.1:8000/products/?categorie=1\">Pine Apple product</a><br>",
-                  "Mango <a href=\"http://127.0.0.1:8000/products/?categorie=1\">Mango product</a><br>",
-                  "Banana <a href=\"http://127.0.0.1:8000/products/?categorie=1\">Banana product</a><br>",
-                  "Orange <a href=\"http://127.0.0.1:8000/products/?categorie=1\">Orange product</a><br>"
-                ]
-              },
-              {
-                  "tag": "grains",
-                  "patterns": ["Grains?"],
-                  "responses": [
-                    "Rise <a href=\"http://127.0.0.1:8000/products/?categorie=4\">Rise product</a><br>",
-                    "Basmathi Rice <a href=\"http://127.0.0.1:8000/products/?categorie=4\">Basmathi Rice product</a><br>",
-                    "Wheat <a href=\"http://127.0.0.1:8000/products/?categorie=4\">Wheat product</a><br>",
-                    "Raagi <a href=\"http://127.0.0.1:8000/products/?categorie=4\">Raagi product</a><br>",
-                    "Maize <a href=\"http://127.0.0.1:8000/products/?categorie=4\">Maize product</a><br>"
-                  ]
-                }
-                ,{
-                    "tag": "apple",
-                    "patterns": ["Apple Fruit"],
-                    "responses": ["<a href=\"http://127.0.0.1:8000/products/?categorie=1\">Apple product</a>"]
-                },
-                {
-                    "tag": "Banana",
-                    "patterns": ["Banana Fruit"],
-                    "responses": ["<a href=\"http://127.0.0.1:8000/products/?categorie=1\">banana product</a>"]
-                },
-                {
-                    "tag": "Kiwi",
-                    "patterns": ["Kiwi Fruit"],
-                    "responses": ["http://127.0.0.1:8000/products/?categorie=1\">Kiwi product</a>"]
-                },
-                {
-                    "tag": "Orange",
-                    "patterns": ["Orange Fruit"],
-                    "responses": ["http://127.0.0.1:8000/products/?categorie=1\">Orange product</a>"]
-                },
-                {
-                    "tag": "Mango",
-                    "patterns": ["Mango Fruit "],
-                    "responses": ["http://127.0.0.1:8000/products/?categorie=1\">Mango product</a>"]
-                },
-                {
-                    "tag": "Strawberry",
-                    "patterns": ["Strawberry Fruit"],
-                    "responses": ["http://127.0.0.1:8000/products/?categorie=1\">Strawberry product</a>"]
-                }
-                ,
-            {
-                "tag": "Fresh Vegetable",
-                "patterns": ["Fresh Vegetable"],
-                "responses": [
-                  "Ginger <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Ginger product</a><br>",
-                  "Pototo <a http://127.0.0.1:8000/products/?categorie=2\">Pototo product</a><br>",
-                  "Carrot <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Carrot product</a><br>",
-                  "Tomoto <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Tomoto product</a><br>",
-                  "Onion <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Onion product</a><br>"
-                ]
-              }
-              ,
-            {
-                "tag": "Soft drinks",
-                "patterns": ["Soft Drinks"],
-                "responses": [
-                  "Maaza <a href=\"http://127.0.0.1:8000/products/?categorie=3\">Maaza product</a><br>",
-                  "Coco Cola <a http://127.0.0.1:8000/products/?categorie=3\">Coco Cola product</a><br>",
-                  "Sprite <a href=\"http://127.0.0.1:8000/products/?categorie=3\">Sprite product</a><br>",
-                  "Red bull <a href=\"http://127.0.0.1:8000/products/?categorie=3\">Red bull product</a><br>",
-                  "Fanta <a href=\"http://127.0.0.1:8000/products/?categorie=3\">Fanta product</a><br>"
-                ]
-              }
-              ,
-            {
-                "tag": "Masala",
-                "patterns": ["Masala"],
-                "responses": [
-                  "Chicken Chilli Masala <a href=\"http://127.0.0.1:8000/products/?categorie=6\">Chicken Chilli Masala product</a><br>",
-                  "Chilly Powder <a http://127.0.0.1:8000/products/?categorie=6\">Chilly Powder product</a><br>",
-                  "Garam Masala <a href=\"http://127.0.0.1:8000/products/?categorie=6\">Garam Masala product</a><br>"
-                  
-                ]
-              }
-              ,
-            {
-                "tag": "Briyani Recipie",
-                "patterns": ["Briyani Recipie"],
-                "responses": [
-                  "Chicken Chilli Masala <a href=\"http://127.0.0.1:8000/products/?categorie=6\">Chicken Chilli Masala</a><br>",
-                  "Chilly Powder <a href=\" http://127.0.0.1:8000/products/?categorie=6\">Chilly Powder</a><br>",
-                  "Garam Masala <a href=\"http://127.0.0.1:8000/products/?categorie=6\">Garam Masala</a><br>",
-                  "Basmathi Rice <a href=\"http://127.0.0.1:8000/products/?categorie=4\">Basmathi Rice</a><br>",
-                  " Gold Winner oil <a href=\"http://127.0.0.1:8000/products/?categorie=5\">Gold Winner oil</a><br>",
-                  "Ginger <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Ginger </a><br>",
-                  "Pototo <a http://127.0.0.1:8000/products/?categorie=2\">Pototo </a><br>",
-                  "Carrot <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Carrot </a><br>",
-                  "Tomoto <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Tomoto </a><br>",
-                  "Onion <a href=\"http://127.0.0.1:8000/products/?8000categorie=2\">Onion </a><br>",
-                  "Beans <a href=\"http://127.0.0.1:8000/products/?8000categorie=2\">Beans </a><br>"
-                ]
-              }
-              ,
-              {
-                "tag": "Dosa batter recipie",
-                "patterns": ["Dosa batter recipie"],
-                "responses": [
-                  "Rice<a href=\"http://127.0.0.1:8000/products/?categorie=4\">Rice product</a><br>",
-                  "urdal <a href=\" http://127.0.0.1:8000/products/?categorie=4\">urdal product</a><br>",
-                  "idli rice<a href=\"http://127.0.0.1:8000/products/?categorie=4\">idli rice product</a><br>"
-                  
-                ]
-              }
-              ,
-              {
-                "tag": "List out the items under 100 ",
-                "patterns": ["List out the items under 100"],
-                "responses": [
-                  "Kiwi<a href=\"http://127.0.0.1:8000/products/?categorie=1\">Kiwi product</a><br>",
-                  "Ginger<a href=\" http://127.0.0.1:8000/products/?categorie=2\">Ginger product</a><br>",
-                  "Banana<a href=\"http://127.0.0.1:8000/products/?categorie=1\">Banana product</a><br>",
-                  "Carrot<a href=\"http://127.0.0.1:8000/products/?categorie=2\">Carrot product</a><br>",
-                  "Cabbage<a href=\"http://127.0.0.1:8000/products/?categorie=2\">Cabbage product</a><br>",
-                  "Cauliflour<a href=\"http://127.0.0.1:8000/products/?categorie=2\">Cauliflour product</a><br>",
-                  "Beans<a href=\"http://127.0.0.1:8000/products/?categorie=2\">Beans product</a><br>",
-                  "Onion<a href=\"http://127.0.0.1:8000/products/?categorie=2\">Onion product</a><br>",
-                  "Betroot<a href=\"http://127.0.0.1:8000/products/?categorie=2\">Betroot product</a><br>",
-                  "Rice<a href=\"http://127.0.0.1:8000/products/?categorie=4\">Rice product</a><br>",
-                  "Wheat<a href=\"http://127.0.0.1:8000/products/?categorie=4\">Wheat product</a><br>",
-                  "Maize<a href=\"http://127.0.0.1:8000/products/?categorie=4\">Maize product</a><br>",
-                  "Ragi<a href=\"http://127.0.0.1:8000/products/?categorie=4\">Ragi product</a><br>",
-                  "Garam Masala<a href=\"http://127.0.0.1:8000/products/?categorie=6\">Garam Masala product</a><br>",
-                  "Chilly Powder<a href=\"http://127.0.0.1:8000/products/?categorie=6\">Chilly Powder product</a><br>",
-                  "Chilly Chicken Masala<a href=\"http://127.0.0.1:8000/products/?categorie=6\">Chilly Chicken Masala product</a><br>"
-                ]
-              }
-              ,
-              {
-                "tag": "List out the vegetables under 100 ",
-                "patterns": ["List out the vegetables under 100"],
-                "responses": [
-                  "Ginger <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Ginger product</a><br>",
-                  "Pototo <a http://127.0.0.1:8000/products/?categorie=2\">Pototo product</a><br>",
-                  "Carrot <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Carrot product</a><br>",
-                  "Tomoto <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Tomoto product</a><br>",
-                  "Onion <a href=\"http://127.0.0.1:8000/products/?categorie=2\">Onion product</a><br>",
-                  "Cabbage<a href=\"http://127.0.0.1:8000/products/?categorie=2\">Cabbage product</a><br>",
-                  "Ladies Finger<a href=\"http://127.0.0.1:8000/products/?categorie=2\">Ladies Finger product</a><br>",
-                  "Cauliflour<a href=\"http://127.0.0.1:8000/products/?categorie=2\">Cauliflour product</a><br>",
-                  "Betroot<a href=\"http://127.0.0.1:8000/products/?categorie=2\">Betroot product</a><br>",
-                  "Beans<a href=\"http://127.0.0.1:8000/products/?categorie=2\">Beans product</a><br>",
-                  "Brinjal<a href=\"http://127.0.0.1:8000/products/?categorie=2\">Brinjal product</a><br>"
-                ]
-              }
-              ,
-              {
-                "tag": "List out the fruits under 100 ",
-                "patterns": ["List out the fruits under 100"],
-                "responses": [
-                  "Kiwi <a href=\"http://127.0.0.1:8000/products/?categorie=1\">Kiwi product</a><br>",
-                  "Banana <a http://127.0.0.1:8000/products/?categorie=1\">Banana product</a><br>"
-                ]
-              }
-              ,
-              {
-                "tag": "List out the fruits above 100 ",
-                "patterns": ["List out the above under 100"],
-                "responses": [
-                  "Apple<a href=\"http://127.0.0.1:8000/products/?categorie=1\">Apple product</a><br>",
-                  "Orange <a http://127.0.0.1:8000/products/?categorie=1\">Orange product</a><br>",
-                  "Mango <a http://127.0.0.1:8000/products/?categorie=1\">Mango product</a><br>",
-                  "Strawberry <a http://127.0.0.1:8000/products/?categorie=1\">Strawberry product</a><br>",
-                  "Guava <a http://127.0.0.1:8000/products/?categorie=1\">Guava product</a><br>",
-                  "Pineapple <a http://127.0.0.1:8000/products/?categorie=1\">Pineapple product</a><br>",
-                  "Watermelon <a http://127.0.0.1:8000/products/?categorie=1\">Watermelon product</a><br>"
-                ]
-              }
-]}
-        
+    {
+      "tag": "Munnar",
+      "patterns": [
+        "What are view places in Munnar ?",
+        "Here are some key places to visit in Munnar"
+      ],
+      "responses": [
+        "1. Tea Gardens2. Eravikulam National Park3. Anamudi Peak4. Mattupetty Dam5. Top Station6. Echo Point7. Kundala Lake8. Attukal Waterfalls"
+      ]
+    },
+    {
+      "tag": "backwaters",
+      "patterns": ["What is the best time to visit the Taj Mahal?"],
+      "responses": ["October to March for pleasant weather."]
+    },
+    {
+      "tag": "backwaters",
+      "patterns": [
+        "Tour Packages section in the app to find houseboat tours in Alleppey."
+      ],
+      "responses": ["October to March for pleasant weather."]
+    },
+    {
+      "tag": "Kiwi",
+
+      "patterns": ["What is the price of Kiwi?"],
+      "responses": [
+        "The price of an Kiwi is 25/kg. <a href=\"https://ravd.onrender.com/products/?categorie=1\">Kiwi product</a>"
+      ]
+    },
+
+    {
+      "tag": "Ginger",
+      "patterns": ["What is the price of Ginger?"],
+      "responses": [
+        "The price of an Ginger is 75/kg. <a href=\"https://ravd.onrender.com/products/?categorie=2\">Ginger product</a>"
+      ]
+    },
+    {
+      "tag": "Orange",
+      "patterns": ["What is the price of Orange?"],
+      "responses": [
+        "The price of an Orange is 155/kg. <a href=\"https://ravd.onrender.com/products/?categorie=1\">Orange product</a>"
+      ]
+    },
+
+    {
+      "tag": "Banana",
+      "patterns": ["What is the price of Banana?"],
+      "responses": [
+        "The price of an Banana is 200/kg. <a href=\"https://ravd.onrender.com/products/?categorie=1\">Banana product</a>"
+      ]
+    },
+    {
+      "tag": "Mango",
+      "patterns": ["What is the price of Mango?"],
+      "responses": [
+        "The price of an KMango is 150/kg. <a href=\"https://ravd.onrender.com/products/?categorie=1\">Mango product</a>"
+      ]
+    },
+    {
+      "tag": "Pototo",
+      "patterns": ["What is the price of Pototo?"],
+      "responses": [
+        "The price of an Pototo is 50/kg. <a href=\"https://ravd.onrender.com/products/?categorie=2\">Pototo product</a>"
+      ]
+    },
+    {
+      "tag": "Carrot",
+      "patterns": ["What is the price of Carrot?"],
+      "responses": [
+        "The price of an Carrot is 70/kg. <a href=\"https://ravd.onrender.com/products/?categorie=2\">Carrot product</a>"
+      ]
+    },
+    {
+      "tag": "Tomoto",
+      "patterns": ["What is the price of Tomoto?"],
+      "responses": [
+        "The price of an Tomoto is 100/kg. <a href=\"https://ravd.onrender.com/products/?categorie=2\">Tomoto product</a>"
+      ]
+    },
+    {
+      "tag": "Pine Apple",
+      "patterns": ["What is the price of Pine Apple?"],
+      "responses": [
+        "The price of an Pine Apple is 100/kg. <a href=\"https://ravd.onrender.com/products/\">Pine Apple product</a>"
+      ]
+    },
+    {
+      "tag": "Cabbage",
+      "patterns": ["What is the price of Cabbage?"],
+      "responses": [
+        "The price of an Cabbage is 30/kg. <a href=\"https://ravd.onrender.com/products/?categorie=2\">Cabbage product</a>"
+      ]
+    },
+    {
+      "tag": "Cauli Flower",
+      "patterns": ["What is the price of Cauli Flower?"],
+      "responses": [
+        "The price of an Cauli Flower is 30/kg. <a href=\"https://ravd.onrender.com/products/?categorie=2\">Cauli Flower product</a>"
+      ]
+    },
+    {
+      "tag": "Ladies Finger",
+      "patterns": ["What is the price of Ladies Finger?"],
+      "responses": [
+        "The price of an Ladies Finger is 20/kg. <a href=\"https://ravd.onrender.com/products/?categorie=2\">Ladies Finger product</a>"
+      ]
+    },
+    {
+      "tag": "Onion",
+      "patterns": ["What is the price of Onion?"],
+      "responses": [
+        "The price of an Onion is 100/kg. <a href=\"https://ravd.onrender.com/products/?categorie=2\">Onion product</a>"
+      ]
+    },
+    {
+      "tag": "Beetroot",
+      "patterns": ["What is the price of Beetroot?"],
+      "responses": [
+        "The price of an Beetroot is 30/kg. <a href=\"https://ravd.onrender.com/products/?categorie=2\">Beetroot product</a>"
+      ]
+    },
+    {
+      "tag": "Beans",
+      "patterns": ["What is the price of Beans?"],
+      "responses": [
+        "The price of an Beans is 20/kg. <a href=\"https://ravd.onrender.com/products/?categorie=2\">Beans product</a>"
+      ]
+    },
+    {
+      "tag": "Brinjal",
+      "patterns": ["What is the price of Brinjal?"],
+      "responses": [
+        "The price of an Brinjal is 20/kg. <a href=\"https://ravd.onrender.com/products/?categorie=2\">Brinjal product</a>"
+      ]
+    },
+    {
+      "tag": "Fresh Fruits",
+      "patterns": ["Fresh Fruits?"],
+      "responses": [
+        "Apple <a href=\"https://ravd.onrender.com/products/?categorie=1\">Apple product</a><br>",
+        "Pine Apple <a https://ravd.onrender.com/products/?categorie=1\">Pine Apple product</a><br>",
+        "Mango <a href=\"https://ravd.onrender.com/products/?categorie=1\">Mango product</a><br>",
+        "Banana <a href=\"https://ravd.onrender.com/products/?categorie=1\">Banana product</a><br>",
+        "Orange <a href=\"https://ravd.onrender.com/products/?categorie=1\">Orange product</a><br>"
+      ]
+    },
+    {
+      "tag": "grains",
+      "patterns": ["Grains?"],
+      "responses": [
+        "Rise <a href=\"https://ravd.onrender.com/products/?categorie=4\">Rise product</a><br>",
+        "Basmathi Rice <a href=\"https://ravd.onrender.com/products/?categorie=4\">Basmathi Rice product</a><br>",
+        "Wheat <a href=\"https://ravd.onrender.com/products/?categorie=4\">Wheat product</a><br>",
+        "Raagi <a href=\"https://ravd.onrender.com/products/?categorie=4\">Raagi product</a><br>",
+        "Maize <a href=\"https://ravd.onrender.com/products/?categorie=4\">Maize product</a><br>"
+      ]
+    },
+    {
+      "tag": "apple",
+      "patterns": ["Apple Fruit"],
+      "responses": [
+        "<a href=\"https://ravd.onrender.com/products/?categorie=1\">Apple product</a>"
+      ]
+    },
+    {
+      "tag": "Banana",
+      "patterns": ["Banana Fruit"],
+      "responses": [
+        "<a href=\"https://ravd.onrender.com/products/?categorie=1\">banana product</a>"
+      ]
+    },
+    {
+      "tag": "Kiwi",
+      "patterns": ["Kiwi Fruit"],
+      "responses": [
+        "https://ravd.onrender.com/products/?categorie=1\">Kiwi product</a>"
+      ]
+    },
+    {
+      "tag": "Orange",
+      "patterns": ["Orange Fruit"],
+      "responses": [
+        "https://ravd.onrender.com/products/?categorie=1\">Orange product</a>"
+      ]
+    },
+    {
+      "tag": "Mango",
+      "patterns": ["Mango Fruit "],
+      "responses": [
+        "https://ravd.onrender.com/products/?categorie=1\">Mango product</a>"
+      ]
+    },
+    {
+      "tag": "Strawberry",
+      "patterns": ["Strawberry Fruit"],
+      "responses": [
+        "https://ravd.onrender.com/products/?categorie=1\">Strawberry product</a>"
+      ]
+    },
+    {
+      "tag": "Fresh Vegetable",
+      "patterns": ["Fresh Vegetable"],
+      "responses": [
+        "Ginger <a href=\"https://ravd.onrender.com/products/?categorie=2\">Ginger product</a><br>",
+        "Pototo <a https://ravd.onrender.com/products/?categorie=2\">Pototo product</a><br>",
+        "Carrot <a href=\"https://ravd.onrender.com/products/?categorie=2\">Carrot product</a><br>",
+        "Tomoto <a href=\"https://ravd.onrender.com/products/?categorie=2\">Tomoto product</a><br>",
+        "Onion <a href=\"https://ravd.onrender.com/products/?categorie=2\">Onion product</a><br>"
+      ]
+    },
+    {
+      "tag": "Soft drinks",
+      "patterns": ["Soft Drinks"],
+      "responses": [
+        "Maaza <a href=\"https://ravd.onrender.com/products/?categorie=3\">Maaza product</a><br>",
+        "Coco Cola <a https://ravd.onrender.com/products/?categorie=3\">Coco Cola product</a><br>",
+        "Sprite <a href=\"https://ravd.onrender.com/products/?categorie=3\">Sprite product</a><br>",
+        "Red bull <a href=\"https://ravd.onrender.com/products/?categorie=3\">Red bull product</a><br>",
+        "Fanta <a href=\"https://ravd.onrender.com/products/?categorie=3\">Fanta product</a><br>"
+      ]
+    },
+    {
+      "tag": "Masala",
+      "patterns": ["Masala"],
+      "responses": [
+        "Chicken Chilli Masala <a href=\"https://ravd.onrender.com/products/?categorie=6\">Chicken Chilli Masala product</a><br>",
+        "Chilly Powder <a https://ravd.onrender.com/products/?categorie=6\">Chilly Powder product</a><br>",
+        "Garam Masala <a href=\"https://ravd.onrender.com/products/?categorie=6\">Garam Masala product</a><br>"
+      ]
+    },
+    {
+      "tag": "Briyani Recipie",
+      "patterns": ["Briyani Recipie"],
+      "responses": [
+        "Chicken Chilli Masala <a href=\"https://ravd.onrender.com/products/?categorie=6\">Chicken Chilli Masala</a><br>",
+        "Chilly Powder <a href=\" https://ravd.onrender.com/products/?categorie=6\">Chilly Powder</a><br>",
+        "Garam Masala <a href=\"https://ravd.onrender.com/products/?categorie=6\">Garam Masala</a><br>",
+        "Basmathi Rice <a href=\"https://ravd.onrender.com/products/?categorie=4\">Basmathi Rice</a><br>",
+        " Gold Winner oil <a href=\"https://ravd.onrender.com/products/?categorie=5\">Gold Winner oil</a><br>",
+        "Ginger <a href=\"https://ravd.onrender.com/products/?categorie=2\">Ginger </a><br>",
+        "Pototo <a https://ravd.onrender.com/products/?categorie=2\">Pototo </a><br>",
+        "Carrot <a href=\"https://ravd.onrender.com/products/?categorie=2\">Carrot </a><br>",
+        "Tomoto <a href=\"https://ravd.onrender.com/products/?categorie=2\">Tomoto </a><br>",
+        "Onion <a href=\"https://ravd.onrender.com/products/?8000categorie=2\">Onion </a><br>",
+        "Beans <a href=\"https://ravd.onrender.com/products/?8000categorie=2\">Beans </a><br>"
+      ]
+    },
+    {
+      "tag": "Dosa batter recipie",
+      "patterns": ["Dosa batter recipie"],
+      "responses": [
+        "Rice<a href=\"https://ravd.onrender.com/products/?categorie=4\">Rice product</a><br>",
+        "urdal <a href=\" https://ravd.onrender.com/products/?categorie=4\">urdal product</a><br>",
+        "idli rice<a href=\"https://ravd.onrender.com/products/?categorie=4\">idli rice product</a><br>"
+      ]
+    },
+    {
+      "tag": "List out the items under 100 ",
+      "patterns": ["List out the items under 100"],
+      "responses": [
+        "Kiwi<a href=\"https://ravd.onrender.com/products/?categorie=1\">Kiwi product</a><br>",
+        "Ginger<a href=\" https://ravd.onrender.com/products/?categorie=2\">Ginger product</a><br>",
+        "Banana<a href=\"https://ravd.onrender.com/products/?categorie=1\">Banana product</a><br>",
+        "Carrot<a href=\"https://ravd.onrender.com/products/?categorie=2\">Carrot product</a><br>",
+        "Cabbage<a href=\"https://ravd.onrender.com/products/?categorie=2\">Cabbage product</a><br>",
+        "Cauliflour<a href=\"https://ravd.onrender.com/products/?categorie=2\">Cauliflour product</a><br>",
+        "Beans<a href=\"https://ravd.onrender.com/products/?categorie=2\">Beans product</a><br>",
+        "Onion<a href=\"https://ravd.onrender.com/products/?categorie=2\">Onion product</a><br>",
+        "Betroot<a href=\"https://ravd.onrender.com/products/?categorie=2\">Betroot product</a><br>",
+        "Rice<a href=\"https://ravd.onrender.com/products/?categorie=4\">Rice product</a><br>",
+        "Wheat<a href=\"https://ravd.onrender.com/products/?categorie=4\">Wheat product</a><br>",
+        "Maize<a href=\"https://ravd.onrender.com/products/?categorie=4\">Maize product</a><br>",
+        "Ragi<a href=\"https://ravd.onrender.com/products/?categorie=4\">Ragi product</a><br>",
+        "Garam Masala<a href=\"https://ravd.onrender.com/products/?categorie=6\">Garam Masala product</a><br>",
+        "Chilly Powder<a href=\"https://ravd.onrender.com/products/?categorie=6\">Chilly Powder product</a><br>",
+        "Chilly Chicken Masala<a href=\"https://ravd.onrender.com/products/?categorie=6\">Chilly Chicken Masala product</a><br>"
+      ]
+    },
+    {
+      "tag": "List out the vegetables under 100 ",
+      "patterns": ["List out the vegetables under 100"],
+      "responses": [
+        "Ginger <a href=\"https://ravd.onrender.com/products/?categorie=2\">Ginger product</a><br>",
+        "Pototo <a https://ravd.onrender.com/products/?categorie=2\">Pototo product</a><br>",
+        "Carrot <a href=\"https://ravd.onrender.com/products/?categorie=2\">Carrot product</a><br>",
+        "Tomoto <a href=\"https://ravd.onrender.com/products/?categorie=2\">Tomoto product</a><br>",
+        "Onion <a href=\"https://ravd.onrender.com/products/?categorie=2\">Onion product</a><br>",
+        "Cabbage<a href=\"https://ravd.onrender.com/products/?categorie=2\">Cabbage product</a><br>",
+        "Ladies Finger<a href=\"https://ravd.onrender.com/products/?categorie=2\">Ladies Finger product</a><br>",
+        "Cauliflour<a href=\"https://ravd.onrender.com/products/?categorie=2\">Cauliflour product</a><br>",
+        "Betroot<a href=\"https://ravd.onrender.com/products/?categorie=2\">Betroot product</a><br>",
+        "Beans<a href=\"https://ravd.onrender.com/products/?categorie=2\">Beans product</a><br>",
+        "Brinjal<a href=\"https://ravd.onrender.com/products/?categorie=2\">Brinjal product</a><br>"
+      ]
+    },
+    {
+      "tag": "List out the fruits under 100 ",
+      "patterns": ["List out the fruits under 100"],
+      "responses": [
+        "Kiwi <a href=\"https://ravd.onrender.com/products/?categorie=1\">Kiwi product</a><br>",
+        "Banana <a https://ravd.onrender.com/products/?categorie=1\">Banana product</a><br>"
+      ]
+    },
+    {
+      "tag": "List out the fruits above 100 ",
+      "patterns": ["List out the above under 100"],
+      "responses": [
+        "Apple<a href=\"https://ravd.onrender.com/products/?categorie=1\">Apple product</a><br>",
+        "Orange <a https://ravd.onrender.com/products/?categorie=1\">Orange product</a><br>",
+        "Mango <a https://ravd.onrender.com/products/?categorie=1\">Mango product</a><br>",
+        "Strawberry <a https://ravd.onrender.com/products/?categorie=1\">Strawberry product</a><br>",
+        "Guava <a https://ravd.onrender.com/products/?categorie=1\">Guava product</a><br>",
+        "Pineapple <a https://ravd.onrender.com/products/?categorie=1\">Pineapple product</a><br>",
+        "Watermelon <a https://ravd.onrender.com/products/?categorie=1\">Watermelon product</a><br>"
+      ]
+    }
+  ]
+}
